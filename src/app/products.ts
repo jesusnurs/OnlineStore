@@ -12,6 +12,7 @@ export const products = [
     description: 'Цена 373 598 ₸. В рассрочку 31 134 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=750000000#!/item',
     img: '/assets/images/1.jpg',
+    rating: '5/5',
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ export const products = [
     description: 'Цена 292 758 ₸. В рассрочку 24 397 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-11-128gb-slim-box-chernyi-100692388/?c=750000000#!/item',
     img: '/assets/images/2.jpg',
+    rating: '5/5',
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ export const products = [
     description: 'Цена 695 480 ₸. В рассрочку 57 957 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-max-256gb-fioletovyi-106363342/?c=750000000#!/item',
     img: '/assets/images/3.jpg',
+    rating: '5/5',
   },
   {
     id: 4,
