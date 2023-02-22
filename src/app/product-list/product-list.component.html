@@ -9,7 +9,7 @@
   </h3>
 
   <p class="info" *ngIf="product.description">
-    Description: {{ product.description }}
+    Description: {{ product.description + '  ' + product.rating }}
   </p>
 
   <button class="buttonW" type="button" (click)="shareWhatsApp(product.url)">
