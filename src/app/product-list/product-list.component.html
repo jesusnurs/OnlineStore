@@ -2,17 +2,24 @@
 
 <div *ngFor="let product of products">
   <h3>
-    <a [title]="product.name" (click)="goToSite(product.url)">
+    <img src="product.img" width="100px" />
+    <a class="info" [title]="product.name" (click)="goToSite(product.url)">
       {{ product.name }}
     </a>
   </h3>
 
-  <p *ngIf="product.description">Description: {{ product.description }}</p>
+  <p class="info" *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
 
-  <button class="buttonW" type="button" (click)="shareWhatsApp()">
+  <button class="buttonW" type="button" (click)="shareWhatsApp(product.url)">
     Share WhatsApp
   </button>
-  <button class="buttonT" type="button" (click)="shareTelegram()">
+  <button
+    class="buttonT"
+    type="button"
+    (click)="shareTelegram(product.url, product.name)"
+  >
     Share Telegram
   </button>
 </div>

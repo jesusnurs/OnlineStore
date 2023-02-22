@@ -9,11 +9,11 @@ import { products } from '../products';
 export class ProductListComponent {
   products = products;
 
-  shareWhatsApp() {
-    window.open('https://web.whatsapp.com://send?text=""');
+  shareWhatsApp(link: string) {
+    window.open(`https://web.whatsapp.com://send?text=${link}`);
   }
-  shareTelegram() {
-    window.open('https://telegram.me/share/url?url={url}&text={text}');
+  shareTelegram(link: string, text: string) {
+    window.open(`https://telegram.me/share/url?url=${link}&text=${text}`);
   }
   goToSite(s: string) {
     window.open(`${s}`);

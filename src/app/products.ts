@@ -11,14 +11,14 @@ export const products = [
     name: 'Apple iPhone 13 128Gb черный',
     description: 'Цена 373 598 ₸. В рассрочку 31 134 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=750000000#!/item',
-    img: '',
+    img: '/assets/images/1.png'
   },
   {
     id: 2,
     name: 'Apple iPhone 11 128Gb Slim Box черный',
     description: 'Цена 292 758 ₸. В рассрочку 24 397 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-11-128gb-slim-box-chernyi-100692388/?c=750000000#!/item',
-    img: '',
+    img: '/images/2.jpg',
   },
   {
     id: 3,

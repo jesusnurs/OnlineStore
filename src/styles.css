@@ -143,9 +143,16 @@ app-top-bar h1 {
 }
 .buttonT {
   position: relative;
-  left: 10px;
+  left: 120px;
 }
-
+.buttonW {
+  position: relative;
+  left: 100px;
+}
+.info {
+  position: relative;
+  left: 100px;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
