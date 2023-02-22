@@ -143,15 +143,23 @@ app-top-bar h1 {
 }
 .buttonT {
   position: relative;
-  left: 120px;
+  left: 175px;
+  bottom: 110px;
 }
 .buttonW {
   position: relative;
-  left: 100px;
+  left: 155px;
+  bottom: 110px;
+}
+.name {
+  position: relative;
+  left: 50px;
+  bottom: 110px;
 }
 .info {
   position: relative;
-  left: 100px;
+  left: 155px;
+  bottom: 110px;
 }
 /*
 Copyright Google LLC. All Rights Reserved.
