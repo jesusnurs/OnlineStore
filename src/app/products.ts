@@ -123,13 +123,56 @@ export const FoodProducts = [
   },
   {
     id: 5,
+    name: 'Bio Elite батончик фруктово-ореховый со вкусом яблоки, апельсин 30 г',
+    description: 'Цена 119 ₸ вид: фруктово-ореховый',
+    url: 'https://kaspi.kz/shop/p/bio-elite-batonchik-fruktovo-orehovyi-so-vkusom-jabloki-apel-sin-30-g-101003817/?c=750000000#!/item',
+    img: '/assets/foodImg/5.jpg',
+    rating: '4.5',
+  },
+];
+
+export const TVProducts = [
+  {
+    id: 1,
+    name: 'Яйца Казгер-Кус куриное отборное (О) 30 шт',
+    description: 'Цена 1 879 ₸ вид: куриное',
+    url: 'https://kaspi.kz/shop/p/kazger-kus-kurinoe-otbornoe-o-30-sht-100236608/?c=750000000#!/item',
+    img: '/assets/foodImg/1.jpg',
+    rating: '5',
+  },
+  {
+    id: 2,
     name: 'Петропавловское молоко 3.2% 900 мл',
     description: 'Цена 469 ₸ вид молока: коровье',
     url: 'https://kaspi.kz/shop/p/petropavlovskoe-moloko-3-2-900-ml-100815879/?c=750000000#!/item',
-    img: '/assets/foodImg/5.jpg',
+    img: '/assets/foodImg/2.jpg',
     rating: '5',
   },
-];
+  {
+    id: 3,
+    name: 'Coca-Cola Classic газированный напиток 2 л',
+    description: 'Цена 675 ₸ тип: газированный напиток',
+    url: 'https://kaspi.kz/shop/p/coca-cola-classic-gazirovannyi-napitok-2-l-100208094/?c=750000000#!/item',
+    img: '/assets/foodImg/3.jpg',
+    rating: '5',
+  },
+  {
+    id: 4,
+    name: 'Вода TASSAY питьевая негазированная 5 л',
+    description: 'Цена 535 ₸ тип: питьевая',
+    url: 'https://kaspi.kz/shop/p/voda-tassay-pit-evaja-negazirovannaja-5-l-100236269/?c=750000000#!/item',
+    img: '/assets/foodImg/4.jpg',
+    rating: '5',
+  },
+  {
+    id: 5,
+    name: 'Bio Elite батончик фруктово-ореховый со вкусом яблоки, апельсин 30 г',
+    description: 'Цена 119 ₸ вид: фруктово-ореховый',
+    url: 'https://kaspi.kz/shop/p/bio-elite-batonchik-fruktovo-orehovyi-so-vkusom-jabloki-apel-sin-30-g-101003817/?c=750000000#!/item',
+    img: '/assets/foodImg/5.jpg',
+    rating: '4.5',
+  },
+]
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
