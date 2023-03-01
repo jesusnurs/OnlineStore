@@ -88,6 +88,17 @@ export const PhoneProducts = [
   },
 ];
 
+export const FoodProducts = [
+  {
+    id: 1,
+    name: 'Яйца Казгер-Кус куриное отборное (О) 30 шт',
+    description:
+      'Цена 1 879 ₸\nвид: куриное\nвид маркировки яйца: столовое (С)\nкатегория: отборное (О) \nстрана производства: Казахстанусловия \nхранения: при t не выше +20C, 90 суток при t от -2C до 0C',
+    url: 'https://kaspi.kz/shop/p/kazger-kus-kurinoe-otbornoe-o-30-sht-100236608/?c=750000000#!/item',
+    img: '/assets/img/1.jpg',
+    rating: '5/5',
+  },
+];
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
