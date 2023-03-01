@@ -12,11 +12,23 @@
 }
 .name {
   position: relative;
-  left: 50px;
+  left: 25px;
   bottom: 110px;
 }
 .info {
   position: relative;
   left: 155px;
   bottom: 110px;
+}
+
+.block .image {
+  display: inline-block;
+  width: 120px;
+  height: 150px;
+}
+
+.block.object-fit img {
+  max-width: 100%; /* Максимальная ширина картинки */
+  min-height: 100%; /* Минимальная высота картинки */
+  object-fit: contain; /* Всю, выше указанную, облась заполнить картинкой */
 }
