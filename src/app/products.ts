@@ -115,9 +115,9 @@ export const FoodProducts = [
   },
   {
     id: 4,
-    name: 'Петропавловское молоко 3.2% 900 мл',
-    description: 'Цена 469 ₸ вид молока: коровье',
-    url: 'https://kaspi.kz/shop/p/petropavlovskoe-moloko-3-2-900-ml-100815879/?c=750000000#!/item',
+    name: 'Вода TASSAY питьевая негазированная 5 л',
+    description: 'Цена 535 ₸ тип: питьевая',
+    url: 'https://kaspi.kz/shop/p/voda-tassay-pit-evaja-negazirovannaja-5-l-100236269/?c=750000000#!/item',
     img: '/assets/foodImg/4.jpg',
     rating: '5',
   },
