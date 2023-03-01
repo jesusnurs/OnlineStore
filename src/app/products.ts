@@ -101,8 +101,8 @@ export const FoodProducts = [
     id: 2,
     name: 'Петропавловское молоко 3.2% 900 мл',
     description: 'Цена 469 ₸ вид молока: коровье',
-    url: 'https://kaspi.kz/shop/p/kazger-kus-kurinoe-otbornoe-o-30-sht-100236608/?c=750000000#!/item',
-    img: '/assets/foodImg/1.jpg',
+    url: 'https://kaspi.kz/shop/p/petropavlovskoe-moloko-3-2-900-ml-100815879/?c=750000000#!/item',
+    img: '/assets/foodImg/2.jpg',
     rating: '5',
   },
 ];
