@@ -141,16 +141,7 @@ app-top-bar h1 {
   background-color: #eeeeee;
 }
 
-.name {
-  position: relative;
-  left: 50px;
-  bottom: 110px;
-}
-.info {
-  position: relative;
-  left: 155px;
-  bottom: 110px;
-}
+
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

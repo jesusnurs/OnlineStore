@@ -92,19 +92,17 @@ export const FoodProducts = [
   {
     id: 1,
     name: 'Яйца Казгер-Кус куриное отборное (О) 30 шт',
-    description:
-      'Цена 1 879 ₸\nвид: куриное\nвид маркировки яйца: столовое (С)\nкатегория: отборное (О) \nстрана производства: Казахстанусловия \nхранения: при t не выше +20C, 90 суток при t от -2C до 0C',
+    description: 'Цена 1 879 ₸ вид: куриное',
     url: 'https://kaspi.kz/shop/p/kazger-kus-kurinoe-otbornoe-o-30-sht-100236608/?c=750000000#!/item',
-    img: '/assets/img/1.jpg',
+    img: '/assets/foodImg/1.jpg',
     rating: '5',
   },
   {
     id: 2,
     name: 'Петропавловское молоко 3.2% 900 мл',
-    description:
-      'Цена 1 879 ₸\nвид: куриное\nвид маркировки яйца: столовое (С)\nкатегория: отборное (О) \nстрана производства: Казахстанусловия \nхранения: при t не выше +20C, 90 суток при t от -2C до 0C',
+    description: 'Цена 469 ₸ вид молока: коровье',
     url: 'https://kaspi.kz/shop/p/kazger-kus-kurinoe-otbornoe-o-30-sht-100236608/?c=750000000#!/item',
-    img: '/assets/img/2.jpg',
+    img: '/assets/foodImg/1.jpg',
     rating: '5',
   },
 ];
