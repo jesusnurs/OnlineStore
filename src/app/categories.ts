@@ -20,4 +20,22 @@ export const Categories = [
     active: false,
     products: PhoneProducts,
   },
+  {
+    id: 3,
+    name: 'Household appliances',
+    active: false,
+    products: undefined,
+  },
+  {
+    id: 4,
+    name: 'Televisions',
+    active: false,
+    products: undefined,
+  },
+  {
+    id: 5,
+    name: 'Food',
+    active: false,
+    products: undefined,
+  },
 ];

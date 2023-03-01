@@ -9,9 +9,11 @@ import { Categories } from './categories';
 export class AppComponent {
   categories = Categories;
 
-  disableCategories(){
-    for(let i=0;i<this.categories.length;i++){
-      this.categories[i].active = false;
+  enableCategory(name: string) {
+    for (let i = 0; i < this.categories.length; i++) {
+      if (this.categories[i].name === name) {
+        this.categories[i].active = true;
+      } else this.categories[i].active = false;
     }
   }
 }
