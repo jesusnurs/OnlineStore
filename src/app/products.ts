@@ -12,7 +12,7 @@ export const PhoneProducts = [
     description: 'Цена 373 598 ₸. В рассрочку 31 134 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=750000000#!/item',
     img: '/assets/img/1.jpg',
-    rating: '5/5',
+    rating: '5',
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const PhoneProducts = [
     description: 'Цена 292 758 ₸. В рассрочку 24 397 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-11-128gb-slim-box-chernyi-100692388/?c=750000000#!/item',
     img: '/assets/img/2.jpg',
-    rating: '5/5',
+    rating: '5',
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const PhoneProducts = [
     description: 'Цена 695 480 ₸. В рассрочку 57 957 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-max-256gb-fioletovyi-106363342/?c=750000000#!/item',
     img: '/assets/img/3.jpg',
-    rating: '5/5',
+    rating: '5',
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ export const PhoneProducts = [
     description: 'Цена 420 608 ₸. В рассрочку 35 051 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-14-128gb-chernyi-106363023/?c=750000000#!/item',
     img: '/assets/img/4.jpg',
-    rating: '5/5',
+    rating: '5',
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ export const PhoneProducts = [
     description: 'Цена 256 677 ₸. В рассрочку 21 390 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-11-64gb-slim-box-chernyi-100692387/?c=750000000#!/item',
     img: '/assets/img/5.jpg',
-    rating: '5/5',
+    rating: '5',
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ export const PhoneProducts = [
     description: 'Цена 371 290 ₸. В рассрочку 30 941 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-belyi-102298420/?c=750000000#!/item',
     img: '/assets/img/6.jpg',
-    rating: '5/5',
+    rating: '5',
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const PhoneProducts = [
     description: 'Цена 625 900 ₸. В рассрочку 52 159 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-256gb-fioletovyi-106363319/?c=750000000#!/item',
     img: '/assets/img/7.jpg',
-    rating: '5/5',
+    rating: '5',
   },
   {
     id: 8,
@@ -68,7 +68,7 @@ export const PhoneProducts = [
     description: 'Цена 376 240 ₸. В рассрочку 31 354 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-sinii-102298364/?c=750000000#!/item',
     img: '/assets/img/8.jpg',
-    rating: '5/5',
+    rating: '5',
   },
   {
     id: 9,
@@ -76,7 +76,7 @@ export const PhoneProducts = [
     description: 'Цена 579 998 ₸. В рассрочку 48 334 ₸ x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-128gb-fioletovyi-106363283/?c=750000000#!/item',
     img: '/assets/img/9.jpg',
-    rating: '5/5',
+    rating: '5',
   },
   {
     id: 10,
@@ -84,7 +84,7 @@ export const PhoneProducts = [
     description: 'Цена 295 880 ₸. В рассрочку 24 657 ₸x 12 мес',
     url: 'https://kaspi.kz/shop/p/apple-iphone-11-128gb-slim-box-belyi-100692385/?c=750000000#!/item',
     img: '/assets/img/10.jpg',
-    rating: '5/5',
+    rating: '5',
   },
 ];
 
@@ -96,7 +96,16 @@ export const FoodProducts = [
       'Цена 1 879 ₸\nвид: куриное\nвид маркировки яйца: столовое (С)\nкатегория: отборное (О) \nстрана производства: Казахстанусловия \nхранения: при t не выше +20C, 90 суток при t от -2C до 0C',
     url: 'https://kaspi.kz/shop/p/kazger-kus-kurinoe-otbornoe-o-30-sht-100236608/?c=750000000#!/item',
     img: '/assets/img/1.jpg',
-    rating: '5/5',
+    rating: '5',
+  },
+  {
+    id: 2,
+    name: 'Петропавловское молоко 3.2% 900 мл',
+    description:
+      'Цена 1 879 ₸\nвид: куриное\nвид маркировки яйца: столовое (С)\nкатегория: отборное (О) \nстрана производства: Казахстанусловия \nхранения: при t не выше +20C, 90 суток при t от -2C до 0C',
+    url: 'https://kaspi.kz/shop/p/kazger-kus-kurinoe-otbornoe-o-30-sht-100236608/?c=750000000#!/item',
+    img: '/assets/img/2.jpg',
+    rating: '5',
   },
 ];
 /*

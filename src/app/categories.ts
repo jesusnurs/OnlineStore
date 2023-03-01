@@ -1,4 +1,4 @@
-import { Product, PhoneProducts } from './products';
+import { Product, PhoneProducts, FoodProducts } from './products';
 
 export interface Category {
   id: number;
@@ -36,6 +36,6 @@ export const Categories = [
     id: 5,
     name: 'Food',
     active: false,
-    products: undefined,
+    products: FoodProducts,
   },
 ];
