@@ -1,5 +1,7 @@
+import { Product } from './product-item/product-item.component';
+
 import {
-  Product,
+  MainMenu,
   PhoneProducts,
   FoodProducts,
   TVProducts,
@@ -13,12 +15,12 @@ export interface Category {
   products: Product[];
 }
 
-export const Categories = [
+export const Categories: Category[] = [
   {
     id: 1,
     name: '',
     active: true,
-    products: undefined,
+    products: MainMenu,
   },
   {
     id: 2,

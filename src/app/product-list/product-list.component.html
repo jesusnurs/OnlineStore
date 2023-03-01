@@ -10,9 +10,15 @@
         </a>
       </h3>
 
-      <p class="info" *ngIf="product.description">
+      <p class="info">
         Description:
-        {{ product.description + ' Rating: ' + product.rating + '/5' }}
+        {{ product.description }}
+      </p>
+      <p class="info">
+        {{ ' Rating: ' + product.rating + '/5' }}
+      </p>
+      <p class="info">
+        {{ ' Likes: ' + product.likes }}
       </p>
 
       <button
@@ -29,6 +35,12 @@
       >
         Share Telegram
       </button>
+      <button class="buttonLikes" type="button" (click)="Like(product)">
+        Like
+      </button>
+      <button class="buttonDelete" type="button" (click)="DeleteProduct(product,category)">
+      Delete
+    </button>
     </div>
   </div>
 </div>

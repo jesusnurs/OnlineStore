@@ -1,11 +1,7 @@
-export interface Product {
-  id: number;
-  name: string;
-  price: number;
-  description: string;
-}
+import { Product } from './product-item/product-item.component';
 
-export const PhoneProducts = [
+export const MainMenu: Product[] = [];
+export const PhoneProducts: Product[] = [
   {
     id: 1,
     name: 'Apple iPhone 13 128Gb черный',
@@ -13,6 +9,7 @@ export const PhoneProducts = [
     url: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-chernyi-102298404/?c=750000000#!/item',
     img: '/assets/img/1.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 2,
@@ -21,6 +18,7 @@ export const PhoneProducts = [
     url: 'https://kaspi.kz/shop/p/apple-iphone-11-128gb-slim-box-chernyi-100692388/?c=750000000#!/item',
     img: '/assets/img/2.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 3,
@@ -29,6 +27,7 @@ export const PhoneProducts = [
     url: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-max-256gb-fioletovyi-106363342/?c=750000000#!/item',
     img: '/assets/img/3.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 4,
@@ -37,6 +36,7 @@ export const PhoneProducts = [
     url: 'https://kaspi.kz/shop/p/apple-iphone-14-128gb-chernyi-106363023/?c=750000000#!/item',
     img: '/assets/img/4.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 5,
@@ -45,6 +45,7 @@ export const PhoneProducts = [
     url: 'https://kaspi.kz/shop/p/apple-iphone-11-64gb-slim-box-chernyi-100692387/?c=750000000#!/item',
     img: '/assets/img/5.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 6,
@@ -53,6 +54,7 @@ export const PhoneProducts = [
     url: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-belyi-102298420/?c=750000000#!/item',
     img: '/assets/img/6.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 7,
@@ -61,6 +63,7 @@ export const PhoneProducts = [
     url: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-256gb-fioletovyi-106363319/?c=750000000#!/item',
     img: '/assets/img/7.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 8,
@@ -69,6 +72,7 @@ export const PhoneProducts = [
     url: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-sinii-102298364/?c=750000000#!/item',
     img: '/assets/img/8.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 9,
@@ -77,6 +81,7 @@ export const PhoneProducts = [
     url: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-128gb-fioletovyi-106363283/?c=750000000#!/item',
     img: '/assets/img/9.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 10,
@@ -85,10 +90,11 @@ export const PhoneProducts = [
     url: 'https://kaspi.kz/shop/p/apple-iphone-11-128gb-slim-box-belyi-100692385/?c=750000000#!/item',
     img: '/assets/img/10.jpg',
     rating: '5',
+    likes: 0,
   },
 ];
 
-export const FoodProducts = [
+export const FoodProducts: Product[] = [
   {
     id: 1,
     name: 'Яйца Казгер-Кус куриное отборное (О) 30 шт',
@@ -96,6 +102,7 @@ export const FoodProducts = [
     url: 'https://kaspi.kz/shop/p/kazger-kus-kurinoe-otbornoe-o-30-sht-100236608/?c=750000000#!/item',
     img: '/assets/foodImg/1.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 2,
@@ -104,6 +111,7 @@ export const FoodProducts = [
     url: 'https://kaspi.kz/shop/p/petropavlovskoe-moloko-3-2-900-ml-100815879/?c=750000000#!/item',
     img: '/assets/foodImg/2.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 3,
@@ -112,6 +120,7 @@ export const FoodProducts = [
     url: 'https://kaspi.kz/shop/p/coca-cola-classic-gazirovannyi-napitok-2-l-100208094/?c=750000000#!/item',
     img: '/assets/foodImg/3.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 4,
@@ -120,6 +129,7 @@ export const FoodProducts = [
     url: 'https://kaspi.kz/shop/p/voda-tassay-pit-evaja-negazirovannaja-5-l-100236269/?c=750000000#!/item',
     img: '/assets/foodImg/4.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 5,
@@ -128,10 +138,11 @@ export const FoodProducts = [
     url: 'https://kaspi.kz/shop/p/bio-elite-batonchik-fruktovo-orehovyi-so-vkusom-jabloki-apel-sin-30-g-101003817/?c=750000000#!/item',
     img: '/assets/foodImg/5.jpg',
     rating: '4.5',
+    likes: 0,
   },
 ];
 
-export const TVProducts = [
+export const TVProducts: Product[] = [
   {
     id: 1,
     name: 'Телевизор Yasin LED-32E7000 81 см черный',
@@ -139,6 +150,7 @@ export const TVProducts = [
     url: 'https://kaspi.kz/shop/p/yasin-led-32e7000-81-sm-chernyi-103411518/?c=750000000#!/item',
     img: '/assets/TVimg/1.jpg',
     rating: '4.8',
+    likes: 0,
   },
   {
     id: 2,
@@ -147,6 +159,7 @@ export const TVProducts = [
     url: 'https://kaspi.kz/shop/p/xiaomi-tv-p1-32-l32m6-6arg-81-sm-chernyi-103039169/?c=750000000#!/item',
     img: '/assets/TVimg/2.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 3,
@@ -155,6 +168,7 @@ export const TVProducts = [
     url: 'https://kaspi.kz/shop/p/samsung-ue43t5300auxce-109-sm-chernyi-100182013/?c=750000000#!/item',
     img: '/assets/TVimg/3.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 4,
@@ -163,6 +177,7 @@ export const TVProducts = [
     url: 'https://kaspi.kz/shop/p/lg-43lm5772pla-109-sm-chernyi-101293496/?c=750000000#!/item',
     img: '/assets/TVimg/4.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 5,
@@ -171,10 +186,11 @@ export const TVProducts = [
     url: 'https://kaspi.kz/shop/p/yasin-32g7-81-sm-chernyi-103489358/?c=750000000#!/item',
     img: '/assets/TVimg/5.jpg',
     rating: '4.7',
+    likes: 0,
   },
 ];
 
-export const HAProducts = [
+export const HAProducts: Product[] = [
   {
     id: 1,
     name: 'Стиральная машина DEXP WM-F510DVL/WW белый',
@@ -182,6 +198,7 @@ export const HAProducts = [
     url: 'https://kaspi.kz/shop/p/dexp-wm-f510dvl-ww-belyi-107963185/?c=750000000#!/item',
     img: '/assets/HA/1.jpg',
     rating: '4.8',
+    likes: 0,
   },
   {
     id: 2,
@@ -190,6 +207,7 @@ export const HAProducts = [
     url: 'https://kaspi.kz/shop/p/lg-f2m5hs6s-serebristyi-3601448/?c=750000000#!/item',
     img: '/assets/HA/2.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 3,
@@ -198,6 +216,7 @@ export const HAProducts = [
     url: 'https://kaspi.kz/shop/p/hausberg-hbo-6503ss-serebristyi-102799294/?c=750000000#!/item',
     img: '/assets/HA/3.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 4,
@@ -206,6 +225,7 @@ export const HAProducts = [
     url: 'https://kaspi.kz/shop/p/ecocool-16le-s--101990902/?c=750000000#!/item',
     img: '/assets/HA/4.jpg',
     rating: '5',
+    likes: 0,
   },
   {
     id: 5,
@@ -214,6 +234,7 @@ export const HAProducts = [
     url: 'https://kaspi.kz/shop/p/artel-hd-345-rn-serebristyi-2702217/?c=750000000#!/item',
     img: '/assets/HA/5.jpg',
     rating: '4.7',
+    likes: 0,
   },
 ];
 /*

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Categories } from '../categories';
+import { Categories, Category } from '../categories';
+import { Product } from '../product-item/product-item.component';
 
 @Component({
   selector: 'app-product-list',
@@ -17,6 +18,19 @@ export class ProductListComponent {
   }
   goToSite(s: string) {
     window.open(`${s}`);
+  }
+
+  Like(product: Product) {
+    product.likes++;
+  }
+  DeleteProduct(product: Product, category: Category) {
+    let cloneCategory: Product[] = [];
+    for (let i = 0; i < category.products.length; i++) {
+      if (product.id !== category.products[i].id) {
+        cloneCategory.push(category.products[i]);
+      }
+    }
+    category.products = cloneCategory;
   }
 }
 
