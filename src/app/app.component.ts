@@ -6,7 +6,15 @@ import { Categories } from './categories';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {}
+export class AppComponent {
+  categories = Categories;
+
+  disableCategories(){
+    for(let i=0;i<this.categories.length;i++){
+      this.categories[i].active = false;
+    }
+  }
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.
