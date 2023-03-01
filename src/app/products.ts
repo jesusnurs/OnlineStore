@@ -180,7 +180,7 @@ export const HAProducts = [
     name: 'Стиральная машина DEXP WM-F510DVL/WW белый',
     description: 'Цена 104 990 ₸ В рассрочку 8 750 ₸x 12 мес',
     url: 'https://kaspi.kz/shop/p/dexp-wm-f510dvl-ww-belyi-107963185/?c=750000000#!/item',
-    img: '/assets/HAimg/1.jpg',
+    img: '/assets/HA/1.jpg',
     rating: '4.8',
   },
   {
@@ -188,6 +188,7 @@ export const HAProducts = [
     name: 'Стиральная машина LG F2M5HS6S серебристый',
     description: 'Цена 238 299 ₸ В рассрочку 19 859 ₸x 12 мес',
     url: 'https://kaspi.kz/shop/p/lg-f2m5hs6s-serebristyi-3601448/?c=750000000#!/item',
+    img: '/assets/HA/2.jpg',
     rating: '5',
   },
   {
@@ -195,7 +196,7 @@ export const HAProducts = [
     name: 'Духовой шкаф Hausberg HBO-6503SS серебристый',
     description: 'Цена 85 990 ₸ В рассрочку 7 166 ₸x 12 мес',
     url: 'https://kaspi.kz/shop/p/hausberg-hbo-6503ss-serebristyi-102799294/?c=750000000#!/item',
-    img: '/assets/HAimg/3.jpg',
+    img: '/assets/HA/3.jpg',
     rating: '5',
   },
   {
@@ -203,7 +204,7 @@ export const HAProducts = [
     name: 'Кулер для воды EcoCool 16LE(S)',
     description: 'Цена 42 000 ₸ В рассрочку 3 500 ₸x 12 мес',
     url: 'https://kaspi.kz/shop/p/ecocool-16le-s--101990902/?c=750000000#!/item',
-    img: '/assets/HAimg/4.jpg',
+    img: '/assets/HA/4.jpg',
     rating: '5',
   },
   {
@@ -211,7 +212,7 @@ export const HAProducts = [
     name: 'Холодильник Artel HD 345 RN серебристый',
     description: 'Цена 164 836 ₸ В рассрочку 13 737 ₸x 12 мес',
     url: 'https://kaspi.kz/shop/p/artel-hd-345-rn-serebristyi-2702217/?c=750000000#!/item',
-    img: '/assets/HAimg/5.jpg',
+    img: '/assets/HA/5.jpg',
     rating: '4.7',
   },
 ];
