@@ -134,9 +134,9 @@ export const FoodProducts = [
 export const TVProducts = [
   {
     id: 1,
-    name: 'Яйца Казгер-Кус куриное отборное (О) 30 шт',
-    description: 'Цена 1 879 ₸ вид: куриное',
-    url: 'https://kaspi.kz/shop/p/kazger-kus-kurinoe-otbornoe-o-30-sht-100236608/?c=750000000#!/item',
+    name: 'Телевизор Yasin LED-32E7000 81 см черный',
+    description: 'Цена 57 739 ₸ В рассрочку 4 812 ₸x 12 мес',
+    url: 'https://kaspi.kz/shop/p/yasin-led-32e7000-81-sm-chernyi-103411518/?c=750000000#!/item',
     img: '/assets/foodImg/1.jpg',
     rating: '5',
   },
