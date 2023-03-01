@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { products } from '../products';
+import { Categories } from '../categories';
 
 @Component({
   selector: 'app-product-list',
@@ -7,7 +7,7 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
-  products = products;
+  categories = Categories;
 
   shareWhatsApp(link: string) {
     window.open(`https://web.whatsapp.com://send?text=${link}`);

@@ -1,5 +1,9 @@
-
-
+.button {
+  border-radius: 0px;
+  background-color: white;
+  color: #1976d2;
+  border: 1px solid;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

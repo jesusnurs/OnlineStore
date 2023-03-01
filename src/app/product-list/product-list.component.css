@@ -1,4 +1,15 @@
-
+.buttonT {
+  position: relative;
+  left: 175px;
+  bottom: 110px;
+  border: none;
+}
+.buttonW {
+  position: relative;
+  left: 155px;
+  bottom: 110px;
+  border: none;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

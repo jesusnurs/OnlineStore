@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Categories } from './categories';
 
 @Component({
   selector: 'app-root',

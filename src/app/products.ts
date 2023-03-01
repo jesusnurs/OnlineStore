@@ -5,7 +5,7 @@ export interface Product {
   description: string;
 }
 
-export const products = [
+export const PhoneProducts = [
   {
     id: 1,
     name: 'Apple iPhone 13 128Gb черный',

@@ -81,7 +81,6 @@ button {
   cursor: pointer;
   background-color: #1976d2;
   color: white;
-  border: none;
 }
 
 .button:hover,
@@ -141,16 +140,7 @@ app-top-bar h1 {
   border-radius: 2px;
   background-color: #eeeeee;
 }
-.buttonT {
-  position: relative;
-  left: 175px;
-  bottom: 110px;
-}
-.buttonW {
-  position: relative;
-  left: 155px;
-  bottom: 110px;
-}
+
 .name {
   position: relative;
   left: 50px;
