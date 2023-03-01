@@ -105,6 +105,30 @@ export const FoodProducts = [
     img: '/assets/foodImg/2.jpg',
     rating: '5',
   },
+  {
+    id: 3,
+    name: 'Coca-Cola Classic газированный напиток 2 л',
+    description: 'Цена 675 ₸ тип: газированный напиток',
+    url: 'https://kaspi.kz/shop/p/coca-cola-classic-gazirovannyi-napitok-2-l-100208094/?c=750000000#!/item',
+    img: '/assets/foodImg/3.jpg',
+    rating: '5',
+  },
+  {
+    id: 4,
+    name: 'Петропавловское молоко 3.2% 900 мл',
+    description: 'Цена 469 ₸ вид молока: коровье',
+    url: 'https://kaspi.kz/shop/p/petropavlovskoe-moloko-3-2-900-ml-100815879/?c=750000000#!/item',
+    img: '/assets/foodImg/4.jpg',
+    rating: '5',
+  },
+  {
+    id: 5,
+    name: 'Петропавловское молоко 3.2% 900 мл',
+    description: 'Цена 469 ₸ вид молока: коровье',
+    url: 'https://kaspi.kz/shop/p/petropavlovskoe-moloko-3-2-900-ml-100815879/?c=750000000#!/item',
+    img: '/assets/foodImg/5.jpg',
+    rating: '5',
+  },
 ];
 /*
 Copyright Google LLC. All Rights Reserved.
