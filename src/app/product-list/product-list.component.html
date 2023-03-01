@@ -3,7 +3,7 @@
     <div *ngFor="let product of category.products">
       <h3>
         <a (click)="goToSite(product.url)">
-          <img src="{{ product.img }}" height="130px" />
+          <img src="{{ product.img }}" width="100px" />
         </a>
         <a class="name" [title]="product.name" (click)="goToSite(product.url)">
           {{ product.name }}
