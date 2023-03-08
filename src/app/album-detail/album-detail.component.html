@@ -1,12 +1,7 @@
 <button [routerLink]="['/home']">Back</button>
 <h1>User {{ userId }}</h1>
 <div>
-  <input
-    type="text"
-    placeholder="Enter title to new album"
-    name="album"
-    [(ngModel)]="addAlbumValue"
-  />
+  <input type="text" placeholder="Enter title to new album" name="album" />
   <button type="button" (click)="addAlbumToUser()">Add</button>
 </div>
 <div *ngFor="let album of albums">

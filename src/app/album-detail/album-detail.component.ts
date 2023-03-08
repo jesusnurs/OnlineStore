@@ -29,11 +29,13 @@ export class AlbumDetailComponent implements OnInit {
     this.albumN = {} as Album;
     this.route.paramMap.subscribe((param) => {
       this.userId = param.get('id');
+      this.user = {} as User;
       this.user.id = this.userId;
 
       this.albumsService
         .getAlbums()
         .subscribe((result: Album[]) => (this.albums = result));
+
       for (let i = 0; i < this.albums.length; i++) {
         if (this.albums[i].userId == this.userId) {
           this.user.albums.push(this.albums[i]);
