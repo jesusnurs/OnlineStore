@@ -8,4 +8,5 @@ export interface User {
   id: number;
   albums: Album[];
   active: boolean;
+  link: number;
 }

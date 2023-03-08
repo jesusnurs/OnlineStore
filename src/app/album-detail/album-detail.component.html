@@ -1,1 +1,4 @@
-<p>album-detail works!</p>
+<div *ngFor="let album of user.albums">
+  <p>{{ album.id }}</p>
+  <p>{{ album.title }}</p>
+</div>

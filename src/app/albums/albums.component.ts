@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AlbumsService } from '../albums-service/albums.service';
 import { Album, User } from '../album';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-albums',
@@ -12,7 +13,7 @@ export class AlbumsComponent implements OnInit {
   albums: Album[];
   users: User[];
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private route: Router) {
     this.users = [];
     this.albums = [];
   }
@@ -31,9 +32,19 @@ export class AlbumsComponent implements OnInit {
             id: prevId,
             albums: [this.albums[i]],
             active: false,
+            link: prevId,
           } as User);
         }
       }
     });
+  }
+  DeleteUser(user: User) {
+    let clone = [] as User[];
+    for (let i = 0; i < this.users.length; i++) {
+      if (this.users[i].id != user.id) {
+        clone.push(this.users[i]);
+      }
+    }
+    this.users = clone;
   }
 }

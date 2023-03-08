@@ -1,5 +1,11 @@
-<ul *ngFor="let user of users">
-  <a [routerLink]="['user/1']">
-    <li>User {{ user.id }}</li>
-  </a>
-</ul>
+<div>
+  
+</div>
+<div>
+  <ul *ngFor="let user of users">
+    <a [routerLink]="['/user', user.id]">
+      <li>User {{ user.id }}</li>
+    </a>
+    <button (click)="DeleteUser(user)">Delete</button>
+  </ul>
+</div>

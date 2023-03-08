@@ -7,22 +7,18 @@ import { EditComponent } from './edit/edit.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    children: [
-      { path: '', component: HomeComponent },
-      { path: 'home', component: HomeComponent },
-      { path: 'user', component: AlbumDetailComponent },
-    ],
-  },
-  {
-    path: 'user',
-    children: [
-      { path: '1', component: AlbumDetailComponent },
-      { path: '2', component: AlbumDetailComponent },
-      { path: '3', component: AlbumDetailComponent },
-    ],
-  },
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: HomeComponent },
+  { path: 'user/:id', component: AlbumDetailComponent },
+  // {
+  //   path: 'home/user',
+  //   children: [
+  //     { path: '1', component: AlbumDetailComponent },
+  //     { path: '2', component: AlbumDetailComponent },
+  //     { path: '3', component: AlbumDetailComponent },
+  //   ],
+  // },
 ];
 
 @NgModule({
