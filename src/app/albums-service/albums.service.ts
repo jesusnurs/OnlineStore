@@ -44,4 +44,16 @@ export class AlbumsService implements OnInit {
       'https://jsonplaceholder.typicode.com/albums'
     );
   }
+  addAlbum(album: Album): Observable<Album> {
+    return this.http.post<Album>(
+      'https://jsonplaceholder.typicode.com/albums',
+      album
+    );
+  }
+  editAlbum(album: Album): Observable<Album> {
+    return this.http.put<Album>(
+      'https://jsonplaceholder.typicode.com/albums' + album.id,
+      album
+    );
+  }
 }

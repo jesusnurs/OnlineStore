@@ -14,6 +14,9 @@ export class AlbumDetailComponent implements OnInit {
   userId: any;
   albums: Album[];
 
+  albumN: Album = {} as Album;
+  addAlbumValue: string = '';
+
   constructor(
     private route: ActivatedRoute,
     private albumsService: AlbumsService
@@ -23,6 +26,7 @@ export class AlbumDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.albumN = {} as Album;
     this.route.paramMap.subscribe((param) => {
       this.userId = param.get('id');
       this.user.id = this.userId;
@@ -35,6 +39,21 @@ export class AlbumDetailComponent implements OnInit {
           this.user.albums.push(this.albums[i]);
         }
       }
+    });
+  }
+  DeleteAlbum(album: Album) {
+    let clone = [] as Album[];
+    for (let i = 0; i < this.albums.length; i++) {
+      if (this.albums[i].id != album.id) {
+        clone.push(this.albums[i]);
+      }
+    }
+    this.albums = clone;
+  }
+  addAlbumToUser() {
+    this.albumN.title = this.addAlbumValue;
+    this.albumsService.addAlbum(this.albumN).subscribe((res) => {
+      this.ngOnInit();
     });
   }
 }
