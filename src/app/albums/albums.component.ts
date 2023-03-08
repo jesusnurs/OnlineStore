@@ -9,25 +9,28 @@ import { Album, User } from '../album';
   styleUrls: ['./albums.component.css'],
 })
 export class AlbumsComponent implements OnInit {
-  albums: any;
+  albums: Album[];
   users: User[];
 
   constructor(private http: HttpClient) {
     this.users = [];
-    const albumsService = new AlbumsService(http);
+    this.albums = [];
+
+    const albumsService = new AlbumsService(this.http);
     albumsService.GetData().subscribe((res) => {
       this.albums = res;
     });
   }
   ngOnInit(): void {
-    var i = -1;
-    this.albums.forEach((album: Album) => {
-      if (album.userId == i) {
-        this.users[i].albums.push(album);
+    var prevId = 0;
+    console.log(this.albums.length);
+    for (let i = 0; i < this.albums.length; i++) {
+      if (this.albums[i].userId == prevId) {
+        this.users[prevId].albums.push(this.albums[i]);
       } else {
-        i++;
-        this.users.push({ id: i, albums: [album] } as User);
+        prevId = this.albums[i].userId;
+        this.users.push({ id: prevId, albums: [this.albums[i]] } as User);
       }
-    });
+    }
   }
 }
