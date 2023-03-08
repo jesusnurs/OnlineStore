@@ -2,23 +2,41 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
-import {AppRoutingModule} from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import {CreateComponent} from './CreateComponent/create.component';
-import {EditComponent} from './EditComponent/edit.component';
-import {ListComponent} from './ListComponent/list.component';
+import { CreateComponent } from './create/create.component';
+import { EditComponent } from './edit/edit.component';
+import { AlbumsService } from './albums-service/albums.service';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { AlbumPhotoComponent } from './album-photo/album-photo.component';
+import { AlbumsComponent } from './albums/albums.component';
 
 @NgModule({
   imports: [
     AppRoutingModule,
+    HttpClientModule,
     BrowserModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([{ path: '', component: ListComponent }]),
+    RouterModule.forRoot([{ path: '', component: AppComponent }]),
   ],
-  declarations: [AppComponent, TopBarComponent, ListComponent,CreateComponent,EditComponent],
+  declarations: [
+    AppComponent,
+    TopBarComponent,
+    CreateComponent,
+    EditComponent,
+    HomeComponent,
+    AboutComponent,
+    AlbumDetailComponent,
+    AlbumPhotoComponent,
+    AlbumsComponent,
+  ],
   bootstrap: [AppComponent],
+  providers: [AlbumsService],
 })
 export class AppModule {}
 
