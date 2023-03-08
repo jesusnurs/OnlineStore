@@ -3,3 +3,8 @@ export interface Album {
   id: number;
   title: string;
 }
+
+export interface User {
+  id: number;
+  albums: Album[];
+}
