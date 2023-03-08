@@ -1,3 +1,5 @@
-<div *ngFor="let album of albums">
-  <p>{{ album.id }}</p>
-</div>
+<ul *ngFor="let user of users">
+  <a [routerLink]="['user/1']">
+    <li>User {{ user.id }}</li>
+  </a>
+</ul>

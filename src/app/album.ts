@@ -7,4 +7,5 @@ export interface Album {
 export interface User {
   id: number;
   albums: Album[];
+  active: boolean;
 }
