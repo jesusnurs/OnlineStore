@@ -3,17 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import {AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import {CreateComponent} from './CreateComponent/create.component';
+import {EditComponent} from './EditComponent/edit.component';
+import {ListComponent} from './ListComponent/list.component';
 
 @NgModule({
   imports: [
+    AppRoutingModule,
     BrowserModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([{ path: '', component: ProductListComponent }]),
+    RouterModule.forRoot([{ path: '', component: ListComponent }]),
   ],
-  declarations: [AppComponent, TopBarComponent, ProductListComponent],
+  declarations: [AppComponent, TopBarComponent, ListComponent,CreateComponent,EditComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
