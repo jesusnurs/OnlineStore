@@ -11,9 +11,36 @@
   /*border:red solid 1px;*/
   list-style-type: none;
   font-family: 'Alegreya';
-  font-size:20px;
+  font-size:25px;
 
 }
 #logo{
   width:170px;
 }
+
+.loginpanel{
+  border:solid 2px #013220;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  border-radius:10px;
+  gap:20px;
+}
+button{
+  padding-top:5px;
+  padding-bottom:5px;
+  background-color:#013220;
+  border-radius:10px;
+  border:none;
+  font-size:20px;
+  color:white;
+  width:100%;
+  margin-bottom:10px;
+}
+fieldset{
+  border-radius:10px;
+  border:#013220;
+}
+
+

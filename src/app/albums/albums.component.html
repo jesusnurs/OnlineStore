@@ -1,9 +1,0 @@
-<div></div>
-<div>
-  <ul *ngFor="let user of users">
-    <a [routerLink]="['/albums', user.id]">
-      <li>User {{ user.id }}</li>
-    </a>
-    <button (click)="DeleteUser(user)">Delete</button>
-  </ul>
-</div>

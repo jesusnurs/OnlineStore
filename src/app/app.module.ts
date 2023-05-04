@@ -1,47 +1,45 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { CreateComponent } from './create/create.component';
-import { EditComponent } from './edit/edit.component';
-import { AlbumsService } from './albums-service/albums.service';
-import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { AlbumDetailComponent } from './album-detail/album-detail.component';
-import { AlbumPhotoComponent } from './album-photo/album-photo.component';
-import { AlbumsComponent } from './albums/albums.component';
+import { AuthComponent } from './auth/auth.component';
+import { CompaniesComponent } from './companies/companies.component';
+import { CompanyDetailsComponent } from './company-details/company-details.component';
+import { CompanyVacanciesComponent } from './company-vacancies/company-vacancies.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { VacanciesComponent } from './vacancies/vacancies.component';
+import { VacancyDetailsComponent } from './vacancy-details/vacancy-details.component';
+import { VacancyTopFiveteenComponent } from './vacancy-top-fiveteen/vacancy-top-fiveteen.component';
+import { VacancyTopTenComponent } from './vacancy-top-ten/vacancy-top-ten.component';
+import { AuthInterceptor } from './AuthInterceptor';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
-  imports: [
-    AppRoutingModule,
-    HttpClientModule,
-    BrowserModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([{ path: '', component: AppComponent }]),
-  ],
   declarations: [
     AppComponent,
-    TopBarComponent,
-    CreateComponent,
-    EditComponent,
-    HomeComponent,
     AboutComponent,
-    AlbumDetailComponent,
-    AlbumPhotoComponent,
-    AlbumsComponent,
+    AuthComponent,
+    CompaniesComponent,
+    CompanyDetailsComponent,
+    CompanyVacanciesComponent,
+    HomeComponent,
+    LoginComponent,
+    VacanciesComponent,
+    VacancyDetailsComponent,
+    VacancyTopFiveteenComponent,
+    VacancyTopTenComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true,
+    },
   ],
   bootstrap: [AppComponent],
-  providers: [AlbumsService],
 })
 export class AppModule {}
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

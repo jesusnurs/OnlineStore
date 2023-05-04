@@ -1,29 +1,34 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { VacancyDetailsComponent } from './vacancy-details/vacancy-details.component';
+import { CompaniesComponent } from './companies/companies.component';
+import { CompanyVacanciesComponent } from './company-vacancies/company-vacancies.component';
+import { VacancyTopTenComponent } from './vacancy-top-ten/vacancy-top-ten.component';
 
-import { CreateComponent } from './create/create.component';
-import { EditComponent } from './edit/edit.component';
+import { CompanyDetailsComponent } from './company-details/company-details.component';
+import { VacanciesComponent } from './vacancies/vacancies.component';
 import { HomeComponent } from './home/home.component';
+import { AuthComponent } from './auth/auth.component';
+import { LoginComponent } from './login/login.component';
+import { VacancyTopFiveteenComponent } from './vacancy-top-fiveteen/vacancy-top-fiveteen.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'companies', component: CompaniesComponent },
+  { path: 'companies/:id', component: CompanyDetailsComponent },
+  { path: 'companies/:id/vacancies', component: CompanyVacanciesComponent },
+  { path: 'vacancies', component: VacanciesComponent },
+  { path: 'vacancies/:id', component: VacancyDetailsComponent },
+  { path: 'top_ten', component: VacancyTopTenComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'auth', component: AuthComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'top_fiveteen', component: VacancyTopFiveteenComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'albums/:id', component: AlbumDetailComponent },
-  // {
-  //   path: 'home/user',
-  //   children: [
-  //     { path: '1', component: AlbumDetailComponent },
-  //     { path: '2', component: AlbumDetailComponent },
-  //     { path: '3', component: AlbumDetailComponent },
-  //   ],
-  // },
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
