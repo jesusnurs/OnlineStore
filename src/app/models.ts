@@ -1,19 +1,22 @@
-export interface Company {
+export interface Company{
   id: number;
   name: string;
   description: string;
   city: string;
   address: string;
 }
-export interface Category {}
-export interface Vacancy {
+export interface Category{
+  
+}
+export interface Vacancy{
   id: number;
   name: string;
   description: string;
   salary: number;
   company: Company;
-  count: number;
+  count:number;
 }
-export interface AuthToken {
-  token: string;
+export interface AuthToken{
+  token:string;
 }
+

@@ -7,28 +7,30 @@ import { VacancyTopTenComponent } from './vacancy-top-ten/vacancy-top-ten.compon
 
 import { CompanyDetailsComponent } from './company-details/company-details.component';
 import { VacanciesComponent } from './vacancies/vacancies.component';
-import { HomeComponent } from './home/home.component';
-import { AuthComponent } from './auth/auth.component';
-import { LoginComponent } from './login/login.component';
-import { VacancyTopFiveteenComponent } from './vacancy-top-fiveteen/vacancy-top-fiveteen.component';
-import { AboutComponent } from './about/about.component';
+import { HomeComponent} from "./home/home.component";
+import {AuthComponent} from "./auth/auth.component";
+import {LoginComponent} from "./login/login.component";
+import {VacancyTopFiveteenComponent} from "./vacancy-top-fiveteen/vacancy-top-fiveteen.component";
+import {AboutComponent} from "./about/about.component";
+
 
 const routes: Routes = [
   { path: 'companies', component: CompaniesComponent },
-  { path: 'companies/:id', component: CompanyDetailsComponent },
+  { path: 'companies/:id', component: CompanyDetailsComponent},
   { path: 'companies/:id/vacancies', component: CompanyVacanciesComponent },
-  { path: 'vacancies', component: VacanciesComponent },
+  { path: 'vacancies', component: VacanciesComponent},
   { path: 'vacancies/:id', component: VacancyDetailsComponent },
   { path: 'top_ten', component: VacancyTopTenComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'auth', component: AuthComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'top_fiveteen', component: VacancyTopFiveteenComponent },
-  { path: 'about', component: AboutComponent },
+  {path:'auth',component:AuthComponent},
+  {path:'login',component:LoginComponent},
+  {path:'top_fiveteen',component:VacancyTopFiveteenComponent},
+  {path:'about',component:AboutComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+
+export class AppRoutingModule { }

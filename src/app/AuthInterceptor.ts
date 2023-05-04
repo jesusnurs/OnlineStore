@@ -1,10 +1,5 @@
 import { Injectable } from '@angular/core';
-import {
-  HttpInterceptor,
-  HttpEvent,
-  HttpHandler,
-  HttpRequest,
-} from '@angular/common/http';
+import { HttpInterceptor, HttpEvent, HttpHandler, HttpRequest } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable()
@@ -16,12 +11,9 @@ export class AuthInterceptor implements HttpInterceptor {
   //Observable in Angular is a feature
   // that provides support for delivering
   // messages between different parts of your single-page application.
-  intercept(
-    req: HttpRequest<any>,
-    next: HttpHandler
-  ): Observable<HttpEvent<any>> {
+  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     const token = localStorage.getItem('token');
-    if (token) {
+    if (token){
       //creating a new request by clonning the current request but updating the headers
       const newReq = req.clone({
         headers: req.headers.set('Authorization', `JWT ${token}`),
@@ -30,7 +22,7 @@ export class AuthInterceptor implements HttpInterceptor {
         // to provide information about the request
         // context, so that the server can tailor the response.
         //
-      });
+      })
       return next.handle(newReq);
     }
 
